@@ -1,0 +1,23 @@
+
+<form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+
+  <div formGroupName="name">
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName">
+    </label>
+
+    <label>
+      Last Name:
+      <input type="text" formControlName="lastName">
+    </label>
+  </div>
+
+  <label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider round"></span>
+  </label>
+
+
+  <button type="submit">Register</button>
+</form>
